@@ -2,6 +2,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
 #define MOUSE 4
 #define SCROLL 5
@@ -62,6 +63,15 @@
         };
     };
 
+　　　behaviors {
+     　   encoder_msc_down_up: encoder_msc_down_up {
+           　 compatible = "zmk,behavior-sensor-rotate";
+           　 label = "ENCODER_MSC_DOWN_UP";
+           　 #sensor-binding-cells = <0>;
+          　  bindings = <&msc &msc SCRL_UP>, <SCRL_DOWN>;
+          　  tap-ms = <20>;
+        };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -73,7 +83,7 @@
 &mt LEFT_SHIFT TAB  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 3 LANGUAGE_2  &lt 3 LANGUAGE_1  &lt_to_layer_0 2 SPACE      &kp BACKSPACE      &lt 1 ENTER                             &kp K_MUTE
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         FUNCTION {
