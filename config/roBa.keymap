@@ -60,17 +60,14 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-        };
+        }
+        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+            tap-ms = <20>;
+        }
     };
-
-　　　behaviors {
-     　   encoder_msc_down_up: encoder_msc_down_up {
-           　 compatible = "zmk,behavior-sensor-rotate";
-           　 label = "ENCODER_MSC_DOWN_UP";
-           　 #sensor-binding-cells = <0>;
-          　  bindings = <&msc &msc SCRL_UP>, <SCRL_DOWN>;
-          　  tap-ms = <20>;
-        };
 
     keymap {
         compatible = "zmk,keymap";
