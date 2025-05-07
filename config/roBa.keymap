@@ -84,12 +84,6 @@
         };
     };
 
-    macros {
-    };
-
-    behaviors {
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
