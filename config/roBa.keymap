@@ -160,5 +160,6 @@
     };
 macro_top: macro_top {
     compatible = "zmk,macro";
+    #binding-cells = <1>;
   };
 };
