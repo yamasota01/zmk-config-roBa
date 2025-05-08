@@ -112,7 +112,7 @@
         triggers-per-rotation = <10>;
     };
 
-    &i2c0_default {
+    i2c0_default {
         #binding-cells = <1>;
     };
 };
