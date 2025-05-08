@@ -81,7 +81,7 @@
             bindings = <
 &kp Q               &kp W         &kp E         &kp R                        &kp T                                                                              &kp Y        &kp U  &lt 5 I    &mt MINUS O  &lt 5 P
 &mt LEFT_CONTROL A  &kp S         &kp D         &kp F                        &kp G                        &kp LS(LG(S))                      &kp LEFT_BRACKET   &kp H        &kp J  &kp K      &kp L        &kp BACKSPACE
-&mt LEFT_SHIFT Z    &kp X         &kp C         &kp V                        &kp B                        &kp COLON                          &kp RIGHT_BRACKET  &kp N        &kp M  &kp COMMA  &kp DOT      &kp SLASH
+&mt LEFT_SHIFT Z    &kp X         &kp C         &kp V                        &kp B                        &kp LEFT_SHIFT                     &kp RIGHT_BRACKET  &kp N        &kp M  &kp COMMA  &kp DOT      &kp MINUS
 &kp LEFT_SHIFT      &kp LEFT_ALT  &kp LEFT_GUI  &lt_to_layer_0 3 LANGUAGE_2  &lt_to_layer_0 2 LANGUAGE_1  &lt_to_layer_0 1 INT_MUHENKAN      &kp SPACE          &lt 1 ENTER                                 &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT
             >;
 
