@@ -111,4 +111,8 @@
         sensors = <&left_encoder &right_encoder>;
         triggers-per-rotation = <10>;
     };
+
+    &i2c0_default {
+        #binding-cells = <1>;
+    };
 };
