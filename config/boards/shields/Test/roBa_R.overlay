@@ -29,9 +29,6 @@
                 <NRF_PSEL(SPIM_MOSI, 0, 4)>,
                 <NRF_PSEL(SPIM_MISO, 0, 4)>;
         };
-    i2c0_default: i2c0_default {
-        #binding-cells = <1>;
-        };
     };
 
     spi0_sleep: spi0_sleep {
