@@ -82,7 +82,7 @@
 &kp Q               &kp W         &kp E         &kp R                        &kp T                                                                             &kp Y            &kp U  &lt 5 I    &mt MINUS O  &lt 5 P
 &mt LEFT_CONTROL A  &kp S         &kp D         &kp F                        &kp G                        &kp LS(LG(S))               &kp LEFT_PARENTHESIS     &kp H            &kp J  &kp K      &kp L        &kp MINUS
 &mt LEFT_SHIFT Z    &kp X         &kp C         &kp V                        &kp B                        &lt 5 LEFT_GUI              &kp RIGHT_PARENTHESIS    &kp N            &kp M  &kp COMMA  &kp DOT      &kp LEFT_SHIFT
-&kp LEFT_SHIFT      &kp LEFT_ALT  &kp LEFT_GUI  &lt_to_layer_0 2 LANGUAGE_2  &lt_to_layer_0 4 LANGUAGE_1  &lt_to_layer_0 5 SPACE      &mt BACKSPACE BACKSPACE  &mt ENTER ENTER                                 &kp GLOBE
+&kp LEFT_SHIFT      &kp LEFT_ALT  &kp LEFT_GUI  &lt_to_layer_0 2 LANGUAGE_2  &lt_to_layer_0 4 LANGUAGE_1  &lt_to_layer_0 5 SPACE      &mt BACKSPACE BACKSPACE  &mt ENTER ENTER                                 &kp F6
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -99,10 +99,10 @@
 
         NUM {
             bindings = <
-&kp AT_SIGN                 &kp HASH     &kp UNDERSCORE   &kp AMPERSAND      &kp COLON                                              &kp PLUS      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LEFT_PARENTHESIS
-&kp LG(A)                   &kp AT_SIGN  &kp EXCLAMATION  &kp QUESTION       &kp SEMICOLON  &kp LC(LA(KP_NUMBER_0))      &kp SLASH  &kp MINUS     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp NUMBER_0
-&mt LEFT_SHIFT KP_NUMBER_0  &kp LG(X)    &kp SEMICOLON    &kp DOUBLE_QUOTES  &kp LS(LG(V))  &kp LG(V)                    &kp EQUAL  &kp ASTERISK  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp BACKSLASH
-&trans                      &trans       &trans           &trans             &trans         &trans                       &trans     &trans                                                  &kp PIPE
+&kp AT_SIGN                 &kp HASH     &kp UNDERSCORE  &kp AMPERSAND      &kp COLON                                              &kp PLUS      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LEFT_PARENTHESIS
+&kp LG(A)                   &kp AT_SIGN  &kp QUESTION    &kp EXCLAMATION    &kp SEMICOLON  &kp LC(LA(KP_NUMBER_0))      &kp SLASH  &kp MINUS     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp NUMBER_0
+&mt LEFT_SHIFT KP_NUMBER_0  &kp LG(X)    &kp SEMICOLON   &kp DOUBLE_QUOTES  &kp LS(LG(V))  &kp LG(V)                    &kp EQUAL  &kp ASTERISK  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp BACKSLASH
+&trans                      &trans       &trans          &trans             &trans         &trans                       &trans     &trans                                                  &kp PIPE
             >;
         };
 
@@ -119,10 +119,10 @@
 
         MOUSE {
             bindings = <
-&trans     &trans         &trans     &trans     &trans                                 &trans  &kp LC(LEFT_ARROW)  &kp F3        &kp LC(RIGHT_ARROW)  &trans
-&kp LG(A)  &kp LS(LG(V))  &kp LG(V)  &kp LG(C)  &kp LS(LA(LG(V)))  &trans      &trans  &trans  &mkp MB1            &kp UP_ARROW  &mkp MB2             &trans
-&trans     &trans         &trans     &trans     &trans             &trans      &trans  &trans  &kp LEFT_ARROW      &trans        &kp RIGHT_ARROW      &trans
-&trans     &trans         &trans     &trans     &trans             &trans      &trans  &trans                                                         &trans
+&trans     &trans         &trans     &trans     &trans                                             &trans               &kp LC(LEFT_ARROW)  &kp F3          &kp LC(RIGHT_ARROW)  &trans
+&kp LG(A)  &kp LS(LG(V))  &kp LG(V)  &kp LG(C)  &kp LS(LA(LG(V)))  &trans      &trans              &trans               &mkp MB1            &kp UP_ARROW    &mkp MB2             &trans
+&trans     &trans         &trans     &trans     &trans             &trans      &trans              &trans               &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &trans
+&trans     &trans         &trans     &trans     &trans             &trans      &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)                                                           &trans
             >;
         };
 
